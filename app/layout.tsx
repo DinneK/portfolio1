@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import '@/app/ui/globals.css'
-import { inter } from './ui/fonts'
+import { poiretOne } from './ui/fonts'
 import SideNav from './ui/navigation-bar/sidenav'
 
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`flex ${inter.className}`}>
+      <body className={`flex ${poiretOne.className}`}>
         <SideNav />
         {children}
       </body>

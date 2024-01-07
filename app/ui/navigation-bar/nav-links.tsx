@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import clsx from 'clsx'
 
 const links = [
   { name: 'Home', href: '/'},
@@ -22,8 +23,13 @@ export default function NavLinks () {
           <Link
             key={link.name}
             href={link.href}
+            className={clsx("flex h-[90px] items-center justify-center p-3 line-through text-xl transform -rotate-90 font-medium hover:no-underline",
+            {
+              'no-underline': pathname === link.href,
+            },
+          )}
           >
-            <p>{link.name}</p>
+            <div>{link.name}</div>
           </Link>
         )
       })}
