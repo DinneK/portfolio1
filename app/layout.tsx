@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from '@/components/Navbar'
-import Navigation from '@/components/Navigation'
+import '@/app/ui/globals.css'
+import { inter } from './ui/fonts'
+import SideNav from './ui/navigation-bar/sidenav'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -18,10 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}</body>
-        <Navigation />
+      <body className={`flex ${inter.className}`}>
+        <SideNav />
+        {children}
+      </body>
     </html>
   )
 }
