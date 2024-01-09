@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { drSugiyama } from '../ui/fonts'
+// import { drSugiyama } from '../ui/fonts'
 import ProjectCard from '../ui/project-card'
 import { Projects } from '../../data/project-data'
-import React from 'react'
+// import React from 'react'
 
 
 export default function Page() {
