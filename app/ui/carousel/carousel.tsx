@@ -15,7 +15,9 @@ const Carousel = () => {
   }
 
   return (
-    <div>
+    <div className="flex">
+      <button onClick={handlePrevious}>←</button>
+
       <AnimatePresence initial={false} mode='wait'>
         <motion.div
           key={currentIndex}
@@ -27,8 +29,7 @@ const Carousel = () => {
         </motion.div>
       </AnimatePresence>
 
-      <button onClick={handlePrevious}>Previous</button>
-      <button onClick={handleNext}>Next</button>
+      <button onClick={handleNext}>→</button>
     </div>
   )
 }
