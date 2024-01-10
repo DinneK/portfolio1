@@ -86,8 +86,8 @@ export const SkillsData = [
   {
     name: "NPM",
     Image: "/npm.webp",
-    width: 80,
-    height: 80,
+    width: 140,
+    height: 140,
   },
   {
     name: "Circle Ci",

@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { drSugiyama } from "../ui/fonts"
 import { SkillsData } from "../../data/tech-stack-data"
+import Carousel from "../ui/carousel/carousel"
 
 export default function Page() {
   return (
@@ -14,7 +15,10 @@ export default function Page() {
       </div>
       <div className="flex flex-grow flex-col">
         <h1 className={`${drSugiyama.className} text-[50px]`}>Tech Stack & Tools</h1>
-        <div className='grid grid-cols-5 gap-5 max-w-[90%] max-h-[90%]'>
+        <div>
+          <Carousel />
+        </div>
+        {/* <div className='grid grid-cols-5 gap-5 max-w-[90%] max-h-[90%]'>
         {SkillsData.map((skill, index) => 
           <Image
             key={index}
@@ -24,7 +28,7 @@ export default function Page() {
             height={skill.height}
           />
         )}
-        </div>
+        </div> */}
       </div>
     </main>
   )
