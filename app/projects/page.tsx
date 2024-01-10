@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
+// import Image from 'next/image'
+// import Link from 'next/link'
 // import { drSugiyama } from '../ui/fonts'
 import ProjectCard from '../ui/project-card'
 import { Projects } from '../../data/project-data'
