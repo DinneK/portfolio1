@@ -1,7 +1,7 @@
 'use client'
-import Image from "next/image"
+// import Image from "next/image"
 import { drSugiyama } from "../ui/fonts"
-import { SkillsData } from "../../data/tech-stack-data"
+// import { SkillsData } from "../../data/tech-stack-data"
 import Carousel from "../ui/carousel/carousel"
 
 export default function Page() {

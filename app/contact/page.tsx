@@ -1,5 +1,7 @@
+import EmailForm from "../ui/email-form/email-form";
 import { drSugiyama } from "../ui/fonts";
 import Image from "next/image";
+
 
 export default function Page() {
   return (
@@ -28,8 +30,9 @@ export default function Page() {
             </a>
           </div>
         </div>
-        <div className="basis-1/2 text-white">
+        <div className="basis-1/2 text-black">
           <h1>I'M GOING TO BE AN EMAIL FORM</h1>
+          <EmailForm />
         </div>
     </main>
   )
