@@ -6,7 +6,7 @@ import Carousel from "../ui/carousel/carousel"
 
 export default function Page() {
   return (
-    <main className="flex flex-grow items-center p-6 h-screen bg-gradient-to-b from-fuchsia-300 to-white h-screen">
+    <main className="flex flex-grow items-center p-6 h-screen bg-light">
       <div className="flex flex-grow flex-col">
         <div><img className="w-[300px] h-[300px] rounded-lg" src="/selfie.jpg" alt="A picture of me" /></div>
         <h2>Opening Line</h2>

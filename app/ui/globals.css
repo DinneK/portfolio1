@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   overflow: hidden; 
@@ -19,4 +19,12 @@ body {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.bg-light {
+  background: linear-gradient(180deg, #FCD7FF 0%, #FFF 100%);
+}
+
+.bg-dark {
+  background: linear-gradient(180deg, #000 0%, #937C96 100%);
 }

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex flex-grow items-center p-6 h-screen bg-gradient-to-b from-fuchsia-300 to-black h-screen">
+    <main className="flex flex-grow items-center p-6 h-screen bg-dark">
         <div className="flex flex-col basis-1/2">
           <h1 className={`${drSugiyama.className} text-[120px] text-white`}>Hi</h1>
           <h3 className="text-[25px] text-white">Email: dinnekopelevich@gmail.com</h3>

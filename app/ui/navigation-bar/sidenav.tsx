@@ -15,8 +15,8 @@ export default function SideNav() {
     'py-4',
     'md:px-2',
     {
-      'bg-gradient-to-b from-fuchsia-300 to-white': isLightPage,
-      'text-white bg-gradient-to-b from-fuchsia-300 to-black': !isLightPage, 
+      'bg-light': isLightPage,
+      'text-white bg-dark': !isLightPage, 
     },
      'h-screen'
   );
