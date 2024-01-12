@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { sendEmail } from "../../api/send-email";
+import { drSugiyama } from "../fonts";
 // import { Resend } from "resend";
 
 // type FormData = {
@@ -17,9 +18,7 @@ const EmailForm = () => {
 
   return (
     <section id="email-form" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
-      <h1>Contact Me</h1>
-      <p>Please contact me through this form.
-      </p>
+      <p className={`${drSugiyama.className} text-white text-[40px]`}>Please contact me through this form.</p>
 
       <form action={async (formData) => {
         await sendEmail(formData)
