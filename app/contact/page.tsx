@@ -8,7 +8,6 @@ export default function Page() {
     <main className="flex flex-grow items-center p-6 h-screen bg-dark">
         <div className="flex flex-col basis-1/2">
           <h1 className={`${drSugiyama.className} text-[120px] text-white`}>Hi</h1>
-          <h3 className="text-[25px] text-white">Email: dinnekopelevich@gmail.com</h3>
           <div className="flex">
             <a href="https://www.linkedin.com/in/dinne-kopelevich-174584a/" target="_blank">
               <Image
@@ -31,7 +30,6 @@ export default function Page() {
           </div>
         </div>
         <div className="basis-1/2 text-black">
-          <h1>I'M GOING TO BE AN EMAIL FORM</h1>
           <EmailForm />
         </div>
     </main>

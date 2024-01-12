@@ -18,11 +18,7 @@ const EmailForm = () => {
   return (
     <section id="email-form" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
       <h1>Contact Me</h1>
-      <p>Please contact me directly at{" "}
-        <a className="underline" href="mailto:dinnekopelevich@gmail.com">
-        dinnekopelevich@gmail.com
-        </a>{" "}
-        or through this form.
+      <p>Please contact me through this form.
       </p>
 
       <form action={async (formData) => {
