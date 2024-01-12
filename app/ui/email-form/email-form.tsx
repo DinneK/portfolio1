@@ -18,12 +18,20 @@ const EmailForm = () => {
 
   return (
     <section id="email-form" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
-      <p className={`${drSugiyama.className} text-white text-[40px]`}>Please contact me through this form.</p>
+      <p className={`${drSugiyama.className} text-black text-[40px]`}>Please contact me through this form.</p>
 
       <form action={async (formData) => {
         await sendEmail(formData)
       }}>
-      <input
+        <input
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          name="senderName"
+          type="name"
+          required
+          maxLength={500}
+          placeholder="Your name"
+        />
+        <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"

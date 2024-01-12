@@ -6,7 +6,8 @@ import clsx from "clsx";
 
 export default function SideNav() {
   const path = usePathname()
-  const isLightPage = (path === '/' || path === '/about');
+  //holder logic, needs to be refactered
+  const isLightPage = (path === '/' || path === '/about' || path === '/projects' || path === '/contact');
 
   const sidebarClasses = clsx(
     'flex',
@@ -16,7 +17,7 @@ export default function SideNav() {
     'md:px-2',
     {
       'bg-light': isLightPage,
-      'text-white bg-dark': !isLightPage, 
+      // 'text-white bg-dark': !isLightPage, 
     },
      'h-screen'
   );
