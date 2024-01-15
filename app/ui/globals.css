@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  overflow: hidden; 
+  overflow: scroll; 
 }
 
 .flip-card-inner {
