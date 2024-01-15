@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`flex w-[150vw] md:w-fit ${poiretOne.className}`}>
+      <body className={`flex ${poiretOne.className}`}>
         <SideNav />
         {children}
       </body>
