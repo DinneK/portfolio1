@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState } from "react";
+import { useState } from "react";
+import ThankYouMessage from "./thank-you-message";
 import { sendEmail } from "../../api/send-email";
 import { drSugiyama } from "../fonts";
 // import { Resend } from "resend";
@@ -13,15 +14,19 @@ import { drSugiyama } from "../fonts";
 // }
 
 const EmailForm = () => {
-  // const [formData, setFormData] = useState({ FormData })
+  const [showThankYou, setShowThankYou] = useState(false)
 
 
   return (
     <section id="email-form" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
       <p className={`${drSugiyama.className} text-black text-[40px]`}>Please contact me through this form.</p>
 
+      {showThankYou ? (
+        <ThankYouMessage />
+      ) : (
       <form action={async (formData) => {
         await sendEmail(formData)
+        setShowThankYou(true)
       }}>
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -48,6 +53,7 @@ const EmailForm = () => {
         />
         <button type="submit">Submit</button>
       </form>
+      )}
     </section>
   )
 }
