@@ -23,10 +23,10 @@ export default function ContactEmail({message, senderName, senderEmail}: Contact
     <Head />
     <Preview>New message from my portfolio</Preview>
     <Tailwind>
-      <Body>
+      <Body className="bg-gray-100">
         <Container>
-          <Section>
-            <Heading>You are recieving the following message</Heading>
+          <Section className="bg-white border-black my-10 px-10 py-4 rounded-md">
+            <Heading className="leading-tight">You are recieving the following message: </Heading>
             <Text>{message}</Text>
             <Hr />
             <Text>The sender's name is: {senderName}</Text>
