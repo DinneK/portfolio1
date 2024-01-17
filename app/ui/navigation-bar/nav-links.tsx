@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx'
+import MobileMenu from './mobile-menu';
 
 const links = [
   { name: 'Home', href: '/'},
@@ -15,15 +16,12 @@ export default function NavLinks () {
   const pathname = usePathname()
 
   return (
-    <>
-      {links.map(link => {
-        const LinkName = link.name;
-
-        return (
+    <div className='hidden md:flex md:flex-col space-y-6'>
+      {links.map(link => (
           <Link
             key={link.name}
             href={link.href}
-            className={clsx("flex h-[90px] items-center justify-center p-3 line-through text-xl transform -rotate-90 font-medium hover:no-underline",
+            className={clsx("flex items-center justify-center p-3 line-through text-xl transform -rotate-90 font-medium hover:no-underline",
             {
               'no-underline': pathname === link.href,
             },
@@ -31,8 +29,8 @@ export default function NavLinks () {
           >
             <div>{link.name}</div>
           </Link>
-        )
-      })}
-    </>
+      ))}
+      <MobileMenu />
+    </div>
   )
 }
