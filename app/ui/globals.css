@@ -27,10 +27,6 @@ body {
   }
 }
 
-.bg-light-vertical {
-  background: linear-gradient(90deg, #FCD7FF 0%, #FFF 100%);
-}
-
 .bg-dark {
   background: linear-gradient(180deg, #000 0%, #0E0C0E 29.89%, #FCD9FF 100%);
 }
