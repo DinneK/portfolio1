@@ -11,7 +11,7 @@ export default function SideNav() {
   // const isLightPage = (path === '/' || path === '/about' || path === '/projects' || path === '/contact');
 
   const sidebarClasses = clsx(
-    'flex flex-col px-3 py-4 md:px-2 sp-pink md:bg-light',
+    'flex flex-col px-3 py-4 md:px-2 md:bg-light sp-pink',
     {
       // 'bg-light': isLightPage,
       // 'text-white bg-dark': !isLightPage, 

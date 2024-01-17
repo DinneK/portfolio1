@@ -21,9 +21,14 @@ body {
   transform: rotateY(180deg);
 }
 
+@layer components {
+  .bg-light {
+    background: linear-gradient(180deg, #FCD7FF 0%, #FFF 100%);
+  }
+}
 
-.bg-light {
-  background: linear-gradient(180deg, #FCD7FF 0%, #FFF 100%);
+.bg-light-vertical {
+  background: linear-gradient(90deg, #FCD7FF 0%, #FFF 100%);
 }
 
 .bg-dark {
