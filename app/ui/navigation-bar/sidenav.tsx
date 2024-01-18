@@ -10,14 +10,16 @@ export default function SideNav() {
   //holder logic, needs to be refactered
   // const isLightPage = (path === '/' || path === '/about' || path === '/projects' || path === '/contact');
 
-  const sidebarClasses = clsx(
-    'flex flex-col px-3 py-4 md:px-2 sp-pink md:bg-light',
-    {
-      // 'bg-light': isLightPage,
-      // 'text-white bg-dark': !isLightPage, 
-    },
-    //  'h-screen'
-  );
+  const sidebarClasses = ('flex flex-col px-3 py-4 md:px-2 sp-pink md:bg-light')
+
+  // const sidebarClasses = clsx(
+  //   'flex flex-col px-3 py-4 md:px-2 sp-pink md:bg-light',
+  //   {
+  //     // 'bg-light': isLightPage,
+  //     // 'text-white bg-dark': !isLightPage, 
+  //   },
+  //   //  'h-screen'
+  // );
 
   return (
     <div className={sidebarClasses}>

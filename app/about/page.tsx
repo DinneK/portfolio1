@@ -6,11 +6,13 @@ import Carousel from "../ui/carousel/carousel"
 
 export default function Page() {
   return (
-    <main className="flex flex-grow items-center p-6 h-screen bg-light">
+    // <main className="flex flex-grow items-center p-6 h-screen bg-light">
+    <main className="flex flex-grow flex-col lg:flex-row items-center p-6 h-screen bg-light">
       <div className="flex flex-grow flex-col">
+        <p className='text-4xl mt-10 md:text-5xl font-bold'>ABOUT</p>
         <div><img className="w-[300px] h-[300px] rounded-lg" src="/selfie.jpg" alt="A picture of me" /></div>
-        <h2>Opening Line</h2>
-        <h3>Some other amazing things about me</h3>
+        <p>Opening Line</p>
+        <p className="text-1xl mb-6 md:text-2xl md:mr-8">Some other amazing things about me</p>
         <h3>CV</h3>
       </div>
       <div className="flex flex-grow flex-col">
@@ -18,17 +20,6 @@ export default function Page() {
         <div>
           <Carousel />
         </div>
-        {/* <div className='grid grid-cols-5 gap-5 max-w-[90%] max-h-[90%]'>
-        {SkillsData.map((skill, index) => 
-          <Image
-            key={index}
-            src={`/skill-images${skill.Image}`}
-            alt={skill.name}
-            width={skill.width}
-            height={skill.height}
-          />
-        )}
-        </div> */}
       </div>
     </main>
   )

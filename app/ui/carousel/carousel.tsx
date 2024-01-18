@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import IconGrid from "./icon-grid";
 import { SkillsData } from "../../../data/tech-stack-data";
+import Image from "next/image";
+// import arrowBack from "../../../public/arrows/arrow-back.svg"
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -16,7 +18,14 @@ const Carousel = () => {
 
   return (
     <div className="flex">
-      <button onClick={handlePrevious}>←</button>
+      <button onClick={handlePrevious}>
+      <Image
+          src="arrows/arrow-back.svg"
+          alt="Back arrow"
+          width={30}
+          height={30}
+      />
+      </button>
 
       <AnimatePresence initial={false} mode='wait'>
         <motion.div
@@ -29,7 +38,14 @@ const Carousel = () => {
         </motion.div>
       </AnimatePresence>
 
-      <button onClick={handleNext}>→</button>
+      <button onClick={handleNext}>
+      <Image
+          src="arrows/arrow-forward.svg"
+          alt="Forward arrow"
+          width={30}
+          height={30}
+      />
+      </button>
     </div>
   )
 }
