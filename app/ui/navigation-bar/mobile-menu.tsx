@@ -30,8 +30,8 @@ const MobileMenu = () => {
         />
       </div>
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-start justify-start">
-          <div className="bg-white p-4">
+        <div className="fixed top-0 left-0 w-full h-full flex items-start justify-start">
+          <div className="bg-white p-4 sp-pink">
             {links.map(link => (
               <Link
                 key={link.name}

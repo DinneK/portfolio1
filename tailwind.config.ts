@@ -13,6 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor: {
+        'light': "linear-gradient(180deg, #FCD7FF 0%, #FFF 100%)",
+      }
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['responsive'] // This ensures your custom class is responsive
     },
   },
   plugins: [],
