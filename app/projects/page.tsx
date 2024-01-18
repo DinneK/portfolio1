@@ -9,8 +9,8 @@ export default function Page() {
   return (
     // <main className="flex flex-grow items-center p-6 h-screen bg-light">
     <main className="flex flex-grow flex-col lg:flex-row items-center p-6 h-screen bg-light">
-      <div className='flex flex-col flex-grow items-center md:basis-1/3'>
-        <p className='text-4xl mt-10 md:text-5xl font-bold'>PROJECTS</p>
+      <div className='flex flex-col flex-grow items-center md:items-start md:basis-1/3'>
+        <p className='text-4xl mt-10 md:text-5xl md:mb-4 font-bold'>PROJECTS</p>
         <p className='text-1xl mb-6 md:text-2xl md:mr-8'>Explore my portfolio, a fusion of creativity and expertise, highlighting my proficiency in web development and design. Experience innovation in every project, meticulously crafted with a passion for web development.</p>
       </div>
       {/* <div className='grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%]'> */}

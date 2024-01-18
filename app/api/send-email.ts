@@ -28,7 +28,7 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid sender email",
     };
   }
-
+  console.log(process.env.PERSONAL_EMAIL)
   try {
     await resend.emails.send({
       from: "Dinne's Contact Form <onboarding@resend.dev>",
@@ -48,18 +48,3 @@ export const sendEmail = async (formData: FormData) => {
     }
   }
 }
-
-// export default async (req: NextApiRequest, res: NextApiResponse) => {
-//   const { data, error } = await resend.emails.send({
-//     from: 'Acme <onboarding@resend.dev>',
-//     to: ['dinne22@gmail.com'],
-//     subject: 'Hello world',
-//     react: EmailForm({ firstName: 'John' }),
-//   });
-
-//   if (error) {
-//     return res.status(400).json(error);
-//   }
-
-//   res.status(200).json(data);
-// };

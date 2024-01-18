@@ -7,11 +7,12 @@ import Carousel from "../ui/carousel/carousel"
 export default function Page() {
   return (
     // <main className="flex flex-grow items-center p-6 h-screen bg-light">
-    <main className="flex flex-grow flex-col md:flex-row items-center p-6 h-screen bg-light">
+    <main className="flex flex-grow flex-col md:flex-row items-center p-6 bg-light">
       <div className="flex flex-grow md:w-3/5 flex-col">
         <p className='text-4xl mt-4 mb-6 md:text-5xl font-bold'>ABOUT</p>
         <div><img className="w-[300px] h-[300px] rounded-lg" src="/selfie.jpg" alt="A picture of me" /></div>
         <p className="text-3xl my-6 md:text-4xl">Creative coder with diverse experience and a passion for seamless user experiences.</p>
+        
         <p className="text-1xl my-3 md:text-2xl md:mr-8">I am an experienced software developer with a passion for creating intuitive and user-friendly applications. With a background in diverse industries, including commercial production, event production, teaching dance, and bartending, I have gained valuable experience in project management, team collaboration, and problem-solving.</p>
         
         <p className="text-1xl my-3 md:text-2xl md:mr-8">As a software developer, I have a keen eye for UX/UI design and have developed the ability to create applications that are both aesthetically pleasing and easy to use. My diverse skill set and experience working on various teams have given them a unique perspective on software development, and I am adept at identifying and resolving complex problems in my work.</p>

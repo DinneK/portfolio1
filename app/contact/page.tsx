@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex flex-grow items-center p-6 h-screen bg-light">
-        <div className="flex flex-col basis-1/2">
-          <h1 className={`${drSugiyama.className} text-[120px] text-black`}>Hi</h1>
-          <div className="flex">
+    <main className="flex flex-grow flex-col h-screen md:flex-row md:items-center p-6 bg-light">
+        <div className="flex flex-col md:ml-11 md:w-1/2">
+          <p className={`${drSugiyama.className} text-[120px] text-black`}>Hi</p>
+          <div className="flex gap-4 mb-6">
             <a href="https://www.linkedin.com/in/dinne-kopelevich-174584a/" target="_blank">
               <Image
                 // style={{ filter: 'invert(100%)' }}
@@ -29,7 +29,7 @@ export default function Page() {
             </a>
           </div>
         </div>
-        <div className="basis-1/2 text-black">
+        <div className="md:w-1/2">
           <EmailForm />
         </div>
     </main>
