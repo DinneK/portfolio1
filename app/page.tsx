@@ -4,7 +4,7 @@ import { drSugiyama } from './ui/fonts';
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-grow lg:flex-row items-center bg-light">
+    <main className="flex flex-col flex-grow h-screen lg:flex-row items-center bg-light">
       <div className='flex flex-col flex-grow items-center justify-center'>
         <p className='text-4xl mt-10 md:text-5xl font-bold'>DINNE KOPELEVICH</p>
         <p className='text-3xl mb-12 md:text-4xl'>Sofware Developer</p>
