@@ -16,7 +16,7 @@ export default function NavLinks () {
   const pathname = usePathname()
 
   return (
-    <div className='hidden md:flex md:flex-col space-y-6'>
+    <div className='hidden md:flex md:flex-col space-y-6 dark:text-white'>
       {links.map(link => (
           <Link
             key={link.name}

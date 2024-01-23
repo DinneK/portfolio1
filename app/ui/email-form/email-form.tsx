@@ -28,7 +28,7 @@ const EmailForm = () => {
           await sendEmail(formData)
           setShowThankYou(true)
         }}>
-        <p className={`${drSugiyama.className} text-black text-3xl mt-6 mb-4 md:text-5xl md:mt-20`}>Please contact me through this form.</p>
+        <p className={`${drSugiyama.className} text-black text-3xl mt-6 mb-4 md:text-5xl md:mt-20 dark:text-white`}>Please contact me through this form.</p>
         <div className="flex gap-3">
           <input
             className="h-14 w-1/2 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none shadow-md placeholder-gray-700"
@@ -48,7 +48,7 @@ const EmailForm = () => {
           />
         </div>
         <textarea
-          className="h-52 w-full my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none shadow-md placeholder-gray-700"
+          className="h-52 w-full my-3 rounded-lg borderBlack p-4 text-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none shadow-md placeholder-gray-700"
           name="message"
           placeholder="Your message"
           required

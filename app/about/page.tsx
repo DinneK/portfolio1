@@ -8,8 +8,8 @@ import Carousel from "../ui/carousel/carousel"
 export default function Page() {
   return (
     // <main className="flex flex-grow items-center p-6 h-screen bg-light">
-    <main className="flex flex-grow flex-col md:flex-row items-center p-6 bg-light">
-      <div className="flex flex-grow md:w-3/5 flex-col">
+    <main className="flex flex-grow flex-col md:flex-row items-center p-6 bg-light dark:bg-dark">
+      <div className="flex flex-grow md:w-3/5 flex-col dark:text-white">
         <p className='text-4xl mt-4 mb-6 md:text-5xl font-bold'>ABOUT</p>
         <div><img className="w-[300px] h-[300px] rounded-lg" src="/selfie.jpg" alt="A picture of me" /></div>
         <p className="text-3xl my-6 md:text-4xl">Creative coder with diverse experience and a passion for seamless user experiences.</p>
@@ -24,7 +24,7 @@ export default function Page() {
           CV
         </a>
       </div>
-      <div className="flex flex-grow flex-col md:w-2/5 md:ml-20">
+      <div className="flex flex-grow flex-col md:w-2/5 md:ml-20 md:dark:text-white">
         <p className={`${drSugiyama.className} text-[50px] mt-6`}>Tech Stack & Tools</p>
         <div className="mb-10">
           <Carousel />

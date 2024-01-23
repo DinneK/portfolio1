@@ -1,15 +1,15 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import { drSugiyama } from './ui/fonts';
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-grow h-screen lg:flex-row items-center bg-light">
-      <div className='flex flex-col flex-grow items-center justify-center'>
+    <main className="flex flex-col flex-grow h-screen lg:flex-row items-center bg-light dark:bg-dark">
+      <div className='flex flex-col flex-grow items-center justify-center dark:text-white'>
         <p className='text-4xl mt-10 md:text-5xl font-bold'>DINNE KOPELEVICH</p>
         <p className='text-3xl mb-12 md:text-4xl'>Sofware Developer</p>
       </div>
-      <div className='flex flex-col flex-grow items-center justify-start lg:items-start'>
+      <div className='flex flex-col flex-grow items-center justify-start lg:items-start dark:text-white'>
         <Link
           href={'/projects'}
         >

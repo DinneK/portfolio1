@@ -15,6 +15,8 @@ const config: Config = {
       },
       backgroundColor: {
         'light': "linear-gradient(180deg, #FCD7FF 0%, #FFF 100%)",
+        // 'dark' : "linear-gradient(180deg, #000 0%, #0E0C0E 29.89%, #FCD9FF 100%)",
+        'dark' : "linear-gradient(180deg, #000 0%, #0E0C0E 47.8%, #6A5B6B 67.3%, #BCA1BE 86.52%, #FCD9FF 100%)",
       }
     },
   },
@@ -24,5 +26,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode : "class",
 }
 export default config

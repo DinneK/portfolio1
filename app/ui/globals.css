@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+  @apply transition-colors duration-200
+}
+
 body {
   overflow: scroll; 
 }
@@ -25,10 +29,10 @@ body {
   .bg-light {
     background: linear-gradient(180deg, #FCD7FF 0%, #FFF 100%);
   }
-}
-
-.bg-dark {
-  background: linear-gradient(180deg, #000 0%, #0E0C0E 29.89%, #FCD9FF 100%);
+  .bg-dark {
+    /* background: linear-gradient(180deg, #000 0%, #0E0C0E 29.89%, #FCD9FF 100%); */
+    background: linear-gradient(180deg, #000 0%, #0E0C0E 47.8%, #6A5B6B 67.3%, #BCA1BE 86.52%, #FCD9FF 100%);
+  }
 }
 
 .sp-pink {
