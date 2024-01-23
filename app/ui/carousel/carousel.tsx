@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import IconGrid from "./icon-grid";
 import { SkillsData } from "../../../data/tech-stack-data";
 import Image from "next/image";
-// import arrowBack from "../../../public/arrows/arrow-back.svg"
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -24,6 +23,7 @@ const Carousel = () => {
           alt="Back arrow"
           width={30}
           height={30}
+          className="dark:invert"
       />
       </button>
 
@@ -44,6 +44,7 @@ const Carousel = () => {
           alt="Forward arrow"
           width={30}
           height={30}
+          className="dark:invert"
       />
       </button>
     </div>
