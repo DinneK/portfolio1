@@ -11,12 +11,22 @@ export default function SideNav() {
   const path = usePathname()
 
   useEffect(() => {
+    const applyThemes = () => {
+      if(isDarkMode) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    }
+
     if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDarkMode(true)
     } else {
       setIsDarkMode(false)
     }
-  }, [])
+
+    applyThemes()
+  }, [isDarkMode])
 
   const toggleDarkMode = () => {
     if(isDarkMode) {

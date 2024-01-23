@@ -2,7 +2,6 @@ import { useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-// import Image from "next/image";
 
 const links = [
   { name: 'Home', href: '/' },
@@ -22,17 +21,11 @@ const MobileMenu = () => {
   return (
     <div className="flex flex-col items center md:hidden">
       <div onClick={toggleMenu} className="curser-pointer">
-        {/* <Image
-          src="menu-bar-icon.svg"
-          alt="Menu bar icon and link"
-          width={40}
-          height={40}
-        /> */}
         <img src="/menu-bar-icon.svg" alt="Burger menu" width={40} height={40} className="dark:invert"/>
       </div>
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-full flex items-start justify-start">
-          <div className="p-4 sp-pink">
+          <div className="p-4 sp-pink dark:bg-black dark:text-white">
             {links.map(link => (
               <Link
                 key={link.name}
