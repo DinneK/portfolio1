@@ -1,13 +1,10 @@
 'use client'
-// import Image from "next/image"
+
 import { drSugiyama } from "../ui/fonts"
-// import { SkillsData } from "../../data/tech-stack-data"
 import Carousel from "../ui/carousel/carousel"
-// import Link from "next/link"
 
 export default function Page() {
   return (
-    // <main className="flex flex-grow items-center p-6 h-screen bg-light">
     <main className="flex flex-grow flex-col md:flex-row items-center p-6 bg-light dark:bg-dark">
       <div className="flex flex-grow md:w-3/5 flex-col dark:text-white">
         <p className='text-4xl mt-4 mb-6 md:text-5xl font-bold'>ABOUT</p>

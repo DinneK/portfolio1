@@ -5,15 +5,10 @@ import NavLinks from "./nav-links";
 import MobileMenu from "./mobile-menu";
 import clsx from "clsx";
 import { useState, useEffect } from "react";
-import SunIcon from '../../../public/dark-mode/light-mode.svg'
-import MoonIcon from '../../../public/dark-mode/dark-mode.svg'
-import Image from "next/image";
 
 export default function SideNav() {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const path = usePathname()
-  //holder logic, needs to be refactered
-  // const isLightPage = (path === '/' || path === '/about' || path === '/projects' || path === '/contact');
 
   useEffect(() => {
     if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -37,11 +32,6 @@ export default function SideNav() {
 
   const sidebarClasses = clsx(
     'flex md:flex-col justify-between px-3 py-4 md:px-2 md:bg-light md:dark:bg-dark sp-pink dark:bg-black',
-    {
-      // 'bg-light': isLightPage,
-      // 'text-white bg-dark': !isLightPage, 
-    },
-    //  'h-screen'
   );
 
   return (

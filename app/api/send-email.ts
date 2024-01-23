@@ -1,6 +1,5 @@
 'use server'
-// import type { NextApiRequest, NextApiResponse } from "next";
-// import { EmailForm } from '../ui/email-form/email-form'
+
 import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "../../lib/utils";
@@ -40,7 +39,6 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail as string,
         senderName: senderName as string,
       })
-      // react: <ContactEmail message={message} senderEmail={senderEmail} senderName={senderName}/>
     })
   } catch(error: unknown) {
     return {
