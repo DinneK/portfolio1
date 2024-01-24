@@ -21,9 +21,9 @@ export default function NavLinks () {
           <Link
             key={link.name}
             href={link.href}
-            className={clsx("flex items-center justify-center p-3 line-through text-xl transform -rotate-90 font-medium hover:no-underline",
+            className={clsx("flex items-center justify-center p-3 text-xl text-slate-400 transform -rotate-90 font-medium hover:line-through",
             {
-              'no-underline': pathname === link.href,
+              'no-underline text-gray-950 font-black dark:text-white': pathname === link.href,
             },
           )}
           >

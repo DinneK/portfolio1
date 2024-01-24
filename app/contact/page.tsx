@@ -4,7 +4,7 @@ import { drSugiyama } from "../ui/fonts";
 
 export default function Page() {
   return (
-    <main className="flex flex-grow flex-col h-screen md:flex-row md:items-center p-6 bg-light dark:bg-dark dark:text-white">
+    <main className="flex flex-grow flex-col md:h-screen md:flex-row md:items-center p-6 bg-light dark:bg-dark dark:text-white">
         <div className="flex flex-col md:ml-11 md:w-1/2">
           <p className={`${drSugiyama.className} text-[120px]`}>Hi</p>
           <div className="flex gap-4 mb-6">

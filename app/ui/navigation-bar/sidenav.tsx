@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import NavLinks from "./nav-links";
 import MobileMenu from "./mobile-menu";
 import clsx from "clsx";
@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 export default function SideNav() {
   const [isDarkMode, setIsDarkMode] = useState(false)
-  const path = usePathname()
+  // const path = usePathname()
 
   useEffect(() => {
     const applyThemes = () => {

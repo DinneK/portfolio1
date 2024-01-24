@@ -12,17 +12,17 @@ export default function Home() {
         <Link
           href={'/projects'}
         >
-          <div className={`${drSugiyama.className} text-8xl my-5 md:text-[150px]`}>Projects</div>
+          <div className={`${drSugiyama.className} text-8xl my-5 md:text-[150px] hover:italic`}>Projects</div>
         </Link>
         <Link
           href={'/about'}
         >
-          <div className={`${drSugiyama.className} text-8xl my-5 md:text-[150px]`}>About</div>
+          <div className={`${drSugiyama.className} text-8xl my-5 md:text-[150px] hover:italic`}>About</div>
         </Link>
         <Link
           href={'/contact'}
         >
-          <div className={`${drSugiyama.className} text-8xl my-5 md:text-[150px]`}>Contact</div>
+          <div className={`${drSugiyama.className} text-8xl my-5 md:text-[150px] hover:italic`}>Contact</div>
         </Link>
       </div>
     </main>
