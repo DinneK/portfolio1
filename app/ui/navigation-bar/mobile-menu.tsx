@@ -31,7 +31,7 @@ const MobileMenu = () => {
                 key={link.name}
                 href={link.href}
                 onClick={toggleMenu}
-                className={clsx("block p-2 text-xl text-slate-400 hover:line-through", {
+                className={clsx("block p-2 text-xl text-slate-400 hover:text-slate-950 hover:line-through", {
                     "text-slate-950 font-black dark:text-white" : pathname === link.href
                   })}
                   >
