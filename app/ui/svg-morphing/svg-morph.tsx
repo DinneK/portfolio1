@@ -17,10 +17,6 @@ export default function SVGMorph({paths} : pathProps) {
     mixer: (a: string, b: string) => interpolate(a, b, {maxSegmentLength: 1})
   })
 
-  // const path = useTransform(progress, [0, 1], paths, {
-  //   mixer: (a: string, b: string) => interpolate(a, b, { maxSegmentLength: 1 })
-  // })
-
   useEffect(() => {
     console.log({path})
     const animation = animate(progress, pathIndex, {
