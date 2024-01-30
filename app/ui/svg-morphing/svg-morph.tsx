@@ -22,7 +22,7 @@ export default function SVGMorph({paths} : pathProps) {
     const animation = animate(progress, pathIndex, {
       duration: 0.4,
       ease: "easeInOut",
-      delay: 0.5,
+      delay: 0.1,
       onComplete: () => {
         if(pathIndex === paths.length -2) {
           progress.set(0)

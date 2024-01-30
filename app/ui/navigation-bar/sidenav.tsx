@@ -5,7 +5,7 @@ import NavLinks from "./nav-links";
 import MobileMenu from "./mobile-menu";
 import clsx from "clsx";
 import { useState, useEffect } from "react";
-import  IconMoon  from "../../../public/dark-mode/dark-mode.svg"
+// import  IconMoon  from "../../../public/dark-mode/dark-mode.svg"
 import MoonMorph from "../moon-to-sun/moon-morph";
 import SunMorph from "../sun-to-moon/sun-morph";
 
