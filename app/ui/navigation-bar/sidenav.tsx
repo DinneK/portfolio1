@@ -1,18 +1,15 @@
 'use client'
 
-// import { usePathname } from "next/navigation";
 import NavLinks from "./nav-links";
-import MobileMenu from "./mobile-menu";
+import MobileMenu from "./mobile-navigation/mobile-menu";
 import clsx from "clsx";
 import { useState, useEffect } from "react";
-// import  IconMoon  from "../../../public/dark-mode/dark-mode.svg"
 import MoonMorph from "../moon-to-sun/moon-morph";
 import SunMorph from "../sun-to-moon/sun-morph";
 
 
 export default function SideNav() {
   const [isDarkMode, setIsDarkMode] = useState(false)
-  // const path = usePathname()
 
   useEffect(() => {
     const applyThemes = () => {
@@ -34,10 +31,8 @@ export default function SideNav() {
 
   const toggleDarkMode = () => {
     if(isDarkMode) {
-      // document.documentElement.classList.remove('dark')
       localStorage.theme = 'light'
     } else {
-      // document.documentElement.classList.add('dark')
       localStorage.theme = 'dark'
     }
 
@@ -58,10 +53,8 @@ export default function SideNav() {
       >
          {isDarkMode ?
          <SunMorph />
-        // <img src="dark-mode/dark-mode.svg" alt="Moon icon" width={40} height={40} className="dark:invert"/>
          : 
          <MoonMorph />
-        // <img src="dark-mode/light-mode.svg" alt="Moon icon" width={40} height={40} className="dark:invert"/>
       }
       </div>
     </div>

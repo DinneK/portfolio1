@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx'
-import MobileMenu from './mobile-menu';
+import MobileMenu from './mobile-navigation/mobile-menu';
 
 const links = [
   { name: 'Home', href: '/'},

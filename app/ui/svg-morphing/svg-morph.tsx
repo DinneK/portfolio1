@@ -10,7 +10,6 @@ type pathProps = {
 export default function SVGMorph({paths} : pathProps) {
   const [pathIndex, setPathIndex] = useState(0)
   const progress = useMotionValue(pathIndex)
-  // const progress = useMotionValue(0)
 
   const arrayOfIndex = paths.map((_ : any, i : number) => i)
   const path = useTransform(progress, arrayOfIndex, paths, {
@@ -18,11 +17,10 @@ export default function SVGMorph({paths} : pathProps) {
   })
 
   useEffect(() => {
-    console.log({path})
     const animation = animate(progress, pathIndex, {
       duration: 0.4,
       ease: "easeInOut",
-      delay: 0.1,
+      // delay: 0.1,
       onComplete: () => {
         if(pathIndex === paths.length -2) {
           progress.set(0)
@@ -40,7 +38,3 @@ export default function SVGMorph({paths} : pathProps) {
     <motion.path d={path} width={40} height={40}/>
   )
 }
-
-// function interpolate(a: unknown, b: unknown, arg2: { maxSegmentLength: number; }): (v: number) => any {
-//   throw new Error('Function not implemented.');
-// }
