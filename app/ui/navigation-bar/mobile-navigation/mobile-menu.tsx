@@ -74,10 +74,10 @@ export default function MobileMenu() {
             }}
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
           >
-          {mobileLinks.map(link => 
+          {mobileLinks.map((link, index )=> 
             <motion.li variants={itemVariants}>
               <Link
-                key={link.name}
+                key={index}
                 href={link.href}
                 className={clsx("block p-2 text-xl text-slate-400 hover:text-slate-950 hover:line-through", {
                     "text-slate-950 font-black dark:text-white" : pathname === link.href

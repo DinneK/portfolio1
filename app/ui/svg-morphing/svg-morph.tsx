@@ -20,7 +20,7 @@ export default function SVGMorph({paths} : pathProps) {
     const animation = animate(progress, pathIndex, {
       duration: 0.4,
       ease: "easeInOut",
-      // delay: 0.1,
+      delay: 0.5,
       onComplete: () => {
         if(pathIndex === paths.length -2) {
           progress.set(0)
@@ -32,7 +32,7 @@ export default function SVGMorph({paths} : pathProps) {
     })
 
     return () => {animation.stop()}
-  }, [pathIndex])
+  }, [pathIndex, paths.length, progress])
 
   return (
     <motion.path d={path} width={40} height={40}/>
