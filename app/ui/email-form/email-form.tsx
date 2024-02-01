@@ -4,22 +4,13 @@ import { useState } from "react";
 import ThankYouMessage from "./thank-you-message";
 import { sendEmail } from "../../api/send-email";
 import { drSugiyama } from "../fonts";
-// import { Resend } from "resend";
 
-// type FormData = {
-//   name: string;
-//   email: string;
-//   subject: string;
-//   message: string;
-// }
 
 const EmailForm = () => {
   const [showThankYou, setShowThankYou] = useState(false)
 
-
   return (
     <section id="email-form" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
-      {/* <p className={`${drSugiyama.className} text-black text-[40px]`}>Please contact me through this form.</p> */}
 
       {showThankYou ? (
         <ThankYouMessage />
