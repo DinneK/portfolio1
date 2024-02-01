@@ -35,7 +35,7 @@ export default function MobileMenu() {
       <motion.nav
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
-        className={clsx("menu md:hidden fixed top-0 left-0 w-1/3 h-1/3 flex items-start justify-start z-20",
+        className={clsx("menu md:hidden fixed top-0 left-0 flex items-start justify-start z-20",
         isOpen ? "bg-pink-50 border-double border-4 border-black dark:bg-black dark:border-white" : ''
         )}
       >
@@ -51,7 +51,7 @@ export default function MobileMenu() {
           )}
         </motion.button>
         <motion.ul
-          className="mt-16 ml-6"
+          className="mt-16 ml-5 mr-5"
           variants={{
             open: {
               clipPath: "inset(0% 0% 0% 0% round 10px)",
