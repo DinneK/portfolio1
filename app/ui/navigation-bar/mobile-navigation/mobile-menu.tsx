@@ -44,11 +44,11 @@ export default function MobileMenu() {
           whileTap={{ scale: 0.97 }}
           onClick={() => setIsOpen(!isOpen)}
         >
-            {isOpen ? (
-              <CloseIcon />
-            ) : (
-              <HamburgerIcon />
-            )}
+          {isOpen ? (
+            <CloseIcon />
+          ) : (
+            <HamburgerIcon />
+          )}
         </motion.button>
         <motion.ul
           className="mt-16 ml-6"
@@ -74,7 +74,7 @@ export default function MobileMenu() {
             }}
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
           >
-          {mobileLinks.map((link, index )=> 
+          {mobileLinks.map((link, index ) => 
             <motion.li variants={itemVariants} key={index}>
               <Link
                 key={link.name}

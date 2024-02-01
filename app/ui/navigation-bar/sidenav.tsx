@@ -1,6 +1,6 @@
 'use client'
 
-import NavLinks from "./nav-links";
+import NavLinks from "./desk-top-navigation/nav-links";
 import MobileMenu from "./mobile-navigation/mobile-menu";
 import clsx from "clsx";
 import { useState, useEffect } from "react";
@@ -40,7 +40,7 @@ export default function SideNav() {
   }
 
   const sidebarClasses = clsx(
-    'flex md:flex-col justify-between px-3 py-4 md:px-2 md:bg-light md:dark:bg-dark sp-pink dark:bg-black',
+    'flex md:flex-col justify-between md:items-start px-3 py-4 md:px-2 md:bg-light md:dark:bg-dark sp-pink dark:bg-black',
   );
 
   return (
