@@ -4,6 +4,7 @@ import NavLinks from "./desk-top-navigation/nav-links";
 import MobileMenu from "./mobile-navigation/mobile-menu";
 import clsx from "clsx";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import MoonMorph from "../moon-to-sun/moon-morph";
 import SunMorph from "../sun-to-moon/sun-morph";
 
@@ -47,7 +48,9 @@ export default function SideNav() {
     <div className={sidebarClasses}>
       <NavLinks />
       <MobileMenu />
-      <div
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ rotate: "50.5deg"}}
         onClick={toggleDarkMode}
         className="curser-pointer mt-4 flex md:justify-center"
       >
@@ -56,7 +59,7 @@ export default function SideNav() {
          : 
          <MoonMorph />
       }
-      </div>
+      </motion.button>
     </div>
   )
 }

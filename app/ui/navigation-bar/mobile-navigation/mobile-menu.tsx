@@ -36,7 +36,7 @@ export default function MobileMenu() {
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         className={clsx("absolute menu md:hidden mt-[-15px] ml-[-10px] top-0 left-0 flex items-start justify-start z-20",
-        isOpen ? "bg-pink-50 rounded-lg shadow-lg dark:shadow-sm dark:shadow-rose-50 dark:bg-black dark:border-white" : ''
+        isOpen ? "bg-pink-50 rounded-lg shadow-lg dark:shadow-sm dark:shadow-rose-50 dark:bg-zinc-800 dark:border-white" : ''
         )}
       >
         <motion.button
