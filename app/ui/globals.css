@@ -2,9 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-* {
+/* * {
   @apply transition-colors duration-200
-}
+} */
 
 body {
   overflow: scroll; 
