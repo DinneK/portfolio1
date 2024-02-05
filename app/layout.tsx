@@ -24,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en" className='dark'>
       <body className={`flex flex-col md:flex-row ${poiretOne.className}`}>
-        <SideNav />
         {children}
       </body>
     </html>
