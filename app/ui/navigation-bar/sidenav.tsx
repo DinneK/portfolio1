@@ -49,8 +49,6 @@ export default function SideNav() {
       <NavLinks />
       <MobileMenu />
       <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ rotate: "50.5deg"}}
         onClick={toggleDarkMode}
         className="curser-pointer mt-4 flex md:justify-center"
       >
