@@ -39,7 +39,9 @@ export default function SideNav() {
     }
 
     setIsDarkMode(!isDarkMode)
-    setPathIndex(0, setPathIndexState)
+    console.log("Before setPathIndex:", pathIndex);
+    setPathIndex(0, setPathIndexState);
+    console.log("After setPathIndex:", pathIndex);
   }
 
   const sidebarClasses = clsx(

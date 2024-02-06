@@ -39,6 +39,6 @@ export default function SVGMorph({paths} : pathProps) {
   )
 }
 
-export function setPathIndex(value: number, setPathIndex: (value: number) => void) {
-  setPathIndex(value);
+export function setPathIndex(value: number, updatePathIndex: (value: number) => void) {
+  updatePathIndex(value);
 }
