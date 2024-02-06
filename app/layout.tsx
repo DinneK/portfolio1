@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import '@/app/ui/globals.css'
 import { poiretOne } from './ui/fonts'
-import SideNav from './ui/navigation-bar/sidenav'
 
 
 export const metadata: Metadata = {

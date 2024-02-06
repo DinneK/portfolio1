@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import EmailForm from "../ui/email-form/email-form";
 import { drSugiyama } from "../ui/fonts";
 

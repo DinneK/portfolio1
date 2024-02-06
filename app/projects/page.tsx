@@ -1,5 +1,7 @@
+'use client'
 import ProjectCard from '../ui/project-card'
 import { Projects } from '../../data/project-data'
+import { motion } from 'framer-motion'
 
 export default function Page() {
   return (

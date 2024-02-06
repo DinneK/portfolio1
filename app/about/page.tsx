@@ -1,7 +1,7 @@
 'use client'
-
 import { drSugiyama } from "../ui/fonts"
 import Carousel from "../ui/carousel/carousel"
+import { motion } from "framer-motion"
 
 export default function Page() {
   return (

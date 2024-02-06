@@ -5,12 +5,6 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <motion.div
-      className='h-full w-full'
-      initial={{ y: "-200hv" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 1 }}
-    >
     <main className="flex flex-col flex-grow h-screen lg:flex-row items-center bg-light dark:bg-dark">
       <div className='flex flex-col flex-grow items-center justify-center dark:text-white'>
         <p className='text-4xl mt-10 md:text-5xl font-bold'>DINNE KOPELEVICH</p>
@@ -34,6 +28,5 @@ export default function Home() {
         </Link>
       </div>
     </main>
-    </motion.div>
   )
 }
