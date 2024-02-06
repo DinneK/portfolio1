@@ -80,7 +80,7 @@ export default function MobileMenu() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={clsx("block p-2 text-xl text-slate-400 hover:text-slate-950 hover:line-through dark:hover:text-white", {
+                className={clsx("block p-2 text-xl text-slate-500 hover:text-slate-950 hover:line-through dark:hover:text-white", {
                     "text-slate-950 font-black dark:text-white" : pathname === link.href
                    })}
               >

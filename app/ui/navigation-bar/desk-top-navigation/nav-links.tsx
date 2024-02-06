@@ -79,7 +79,7 @@ export default function NavLinks() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={clsx("flex items-center justify-center p-3 text-xl text-slate-400 transform -rotate-90 font-medium hover:line-through hover:text-gray-950 dark:hover:text-white",
+              className={clsx("flex items-center justify-center p-3 text-xl text-slate-500 transform -rotate-90 font-medium hover:line-through hover:text-gray-950 dark:hover:text-white",
               {
                 'no-underline font-black dark:text-white md:text-black': pathname === link.href,
               }
