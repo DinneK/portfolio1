@@ -1,5 +1,4 @@
 'use client'
-
 import NavLinks from "./desk-top-navigation/nav-links";
 import MobileMenu from "./mobile-navigation/mobile-menu";
 import clsx from "clsx";
@@ -7,10 +6,12 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MoonMorph from "../moon-to-sun/moon-morph";
 import SunMorph from "../sun-to-moon/sun-morph";
+import { setPathIndex } from "../svg-morphing/svg-morph";
 
 
 export default function SideNav() {
   const [isDarkMode, setIsDarkMode] = useState(false)
+  const [pathIndex, setPathIndexState] = useState(0);
 
   useEffect(() => {
     const applyThemes = () => {
@@ -38,6 +39,7 @@ export default function SideNav() {
     }
 
     setIsDarkMode(!isDarkMode)
+    setPathIndex(0, setPathIndexState)
   }
 
   const sidebarClasses = clsx(

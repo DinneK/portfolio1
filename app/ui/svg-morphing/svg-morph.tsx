@@ -32,9 +32,13 @@ export default function SVGMorph({paths} : pathProps) {
     })
 
     return () => {animation.stop()}
-  }, [pathIndex, paths.length, progress])
+  }, [pathIndex])
 
   return (
     <motion.path d={path} width={40} height={40}/>
   )
+}
+
+export function setPathIndex(value: number, setPathIndex: (value: number) => void) {
+  setPathIndex(value);
 }
